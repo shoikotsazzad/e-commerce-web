@@ -8,22 +8,29 @@
     <!-- Daisey UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>ShopNow</h1>
+    <header class="">
+        <nav class="navbar ">
+            <div class="logo mx-14 gap-5 text-pink-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>                  
+                <h1>EliteMart</h1>
             </div>
-            
-            <ul class="nav-links">
-                <li><a href="#" class="nav-item active">Home</a></li>
-                <li><a href="#" class="nav-item">Products</a></li>
-                <li><a href="#" class="nav-item">Categories</a></li>
-                <li><a href="#" class="nav-item">About</a></li>
-                <li><a href="#" class="nav-item">Contact</a></li>
-            </ul>
+            <div class="mx-14">
+                <ul class="nav-links ">
+                    <li><a href="#" class="nav-item active">Home</a></li>
+                    <li><a href="#" class="nav-item">Products</a></li>
+                    <li><a href="#" class="nav-item">Categories</a></li>
+                    <li><a href="#" class="nav-item">About</a></li>
+                    <li><a href="#" class="nav-item">Contact</a></li>
+                </ul>
+            </div>
             
         </nav>
     
@@ -32,10 +39,11 @@
      <Main>
         <!-- Home section -->
      <section class="home">
-        <div class="home-content">
-            <h1>Welcome to ShopNow</h1>
-            <p>Discover amazing products at incredible prices</p>
-            <button id="newbtn"class="btn btn-error"> Shop Now</button>
+        <div class="home-content items-center">
+            <h1>Welcome to EliteMart! </h1>
+            <h3>Where Your Wallet Stays Happy!</h3> 
+            <p>Tired of boring shopping? Say hello to deals so good, even your bank account will do a happy dance! From must-haves to 'why did I buy this?' – we've got it all at prices that make you feel like a shopping genius!</p>
+            <button id="newbtn"class="btn btn-error"> Start Shopping Now</button>
         </div>
         <div class="home-image">
             <img src="images/girl1.jpg">
@@ -44,12 +52,13 @@
 
     <!-- Product Section -->
     <section class="products">
-        <h2 class="section-title">Featured Products</h2>
+        <div class="0"><h2 class="section-title font-bold text-5xl text-pink-500 m-24">Featured Products</h2></div>
+        
         <div class="product-container">
             <!-- Product 1 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="/api/placeholder/300/300" alt="Product 1">
+                    <img src="images/headphone2.jpeg" alt="Product 1">
                     <div class="product-tag">New</div>
                 </div>
                 <div class="product-info">
@@ -61,17 +70,17 @@
                     </div>
                     <p class="product-description">High-quality wireless headphones with noise cancellation</p>
                     <div class="product-price">
-                        <span class="current-price">$129.99</span>
-                        <span class="original-price">$159.99</span>
+                        <span class="current-price">5000 BDT</span>
+                        <span class="original-price">6000 BDT</span>
                     </div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="btn btn-error add-to-cart"> Add to Cart</button>
                 </div>
             </div>
     
             <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="/api/placeholder/300/300" alt="Product 2">
+                    <img src="images/smart-watch.jpg" alt="Product 2">
                     <div class="product-tag sale">Sale</div>
                 </div>
                 <div class="product-info">
@@ -82,17 +91,17 @@
                     </div>
                     <p class="product-description">Fitness tracker with heart rate monitor</p>
                     <div class="product-price">
-                        <span class="current-price">$89.99</span>
-                        <span class="original-price">$119.99</span>
+                        <span class="current-price">7880 BDT</span>
+                        <span class="original-price">8500 BDT</span>
                     </div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="btn btn-error add-to-cart"> Add to Cart</button>
                 </div>
             </div>
     
             <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="/api/placeholder/300/300" alt="Product 3">
+                    <img src="images/laptop-bag2.webp" alt="Product 3">
                 </div>
                 <div class="product-info">
                     <h3>Laptop Backpack</h3>
@@ -102,16 +111,17 @@
                     </div>
                     <p class="product-description">Water-resistant laptop backpack with USB charging port</p>
                     <div class="product-price">
-                        <span class="current-price">$49.99</span>
+                        <span class="current-price">2350 BDT</span>
+                        <span class="original-price">2520 BDT</span>
                     </div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="btn btn-error add-to-cart"> Add to Cart</button>
                 </div>
             </div>
     
             <!-- Product 4 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="/api/placeholder/300/300" alt="Product 4">
+                    <img src="images/bluetooth-speaker.jpg" alt="Product 4">
                     <div class="product-tag limited">Limited</div>
                 </div>
                 <div class="product-info">
@@ -123,10 +133,10 @@
                     </div>
                     <p class="product-description">Portable waterproof bluetooth speaker</p>
                     <div class="product-price">
-                        <span class="current-price">$79.99</span>
-                        <span class="original-price">$99.99</span>
+                        <span class="current-price">2500 BDT</span>
+                        <span class="original-price">2800 BDT</span>
                     </div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="btn btn-error add-to-cart"> Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -134,13 +144,13 @@
 
     <!-- Category Section -->
     <section class="categories">
-        <h2 class="category-title">Shop By Category</h2>
+        <h2 class="category-title font-bold text-5xl text-pink-500 m-24">Shop By Category</h2>
         
         <div class="category-container">
             <!-- Electronics Category -->
             <div class="category-card">
                 <div class="category-image">
-                    <img src="/api/placeholder/400/400" alt="Electronics">
+                    <img src="images/electronics.jpg" alt="Electronics">
                     <div class="category-overlay">
                         <h3>Electronics</h3>
                         <p>200+ Products</p>
@@ -149,12 +159,12 @@
                 </div>
             </div>
     
-            <!-- Fashion Category -->
+            <!-- Fitness Gear -->
             <div class="category-card">
                 <div class="category-image">
-                    <img src="/api/placeholder/400/400" alt="Fashion">
+                    <img src="images/fitness-gear.webp" alt="Fashion">
                     <div class="category-overlay">
-                        <h3>Fashion</h3>
+                        <h3>Fitness Gear</h3>
                         <p>350+ Products</p>
                         <a href="#" class="category-btn">Shop Now</a>
                     </div>
@@ -164,7 +174,7 @@
             <!-- Home & Living Category -->
             <div class="category-card">
                 <div class="category-image">
-                    <img src="/api/placeholder/400/400" alt="Home & Living">
+                    <img src="images/home-and-living.jpg" alt="Home & Living">
                     <div class="category-overlay">
                         <h3>Home & Living</h3>
                         <p>150+ Products</p>
@@ -176,7 +186,7 @@
             <!-- Sports Category -->
             <div class="category-card">
                 <div class="category-image">
-                    <img src="/api/placeholder/400/400" alt="Sports">
+                    <img src="images/sports.avif" alt="Sports">
                     <div class="category-overlay">
                         <h3>Sports</h3>
                         <p>120+ Products</p>
@@ -188,7 +198,7 @@
             <!-- Books Category -->
             <div class="category-card">
                 <div class="category-image">
-                    <img src="/api/placeholder/400/400" alt="Books">
+                    <img src="images/books.avif" alt="Books">
                     <div class="category-overlay">
                         <h3>Books</h3>
                         <p>400+ Products</p>
@@ -200,21 +210,21 @@
             <!-- Beauty Category -->
             <div class="category-card">
                 <div class="category-image">
-                    <img src="/api/placeholder/400/400" alt="Beauty">
+                    <img src="images/beauty.webp" alt="Beauty">
                     <div class="category-overlay">
-                        <h3>Beauty</h3>
+                        <h3>Beauty & Skincare</h3>
                         <p>180+ Products</p>
                         <a href="#" class="category-btn">Shop Now</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Gadgets Category -->
+            <!--  Category -->
             <div class="category-card">
                 <div class="category-image">
-                    <img src="/api/placeholder/400/400" alt="Beauty">
+                    <img src="images/arts.webp" alt="Beauty">
                     <div class="category-overlay">
-                        <h3>Gadgets</h3>
+                        <h3>Arts & Crafts</h3>
                         <p>180+ Products</p>
                         <a href="#" class="category-btn">Shop Now</a>
                     </div>
@@ -224,9 +234,9 @@
             <!-- Tech Category -->
             <div class="category-card">
                 <div class="category-image">
-                    <img src="/api/placeholder/400/400" alt="Beauty">
+                    <img src="images/tech-gadgets.png" alt="Beauty">
                     <div class="category-overlay">
-                        <h3>Tech</h3>
+                        <h3>Tech Gadgets</h3>
                         <p>180+ Products</p>
                         <a href="#" class="category-btn">Shop Now</a>
                     </div>
@@ -239,20 +249,17 @@
 
     <!-- About section -->
     <section class="about">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="images/girl2.webp" alt="About Our Store">
-                <div class="experience-badge">
-                    <span class="years">10+</span>
-                    <span class="text">Years of Excellence</span>
-                </div>
+        <div class=" flex justify-between content-center gap-1 md:gap-5 ">
+            <div class="about-image w-2/5 flex-shrink-0">
+                <img class="w-full" src="images/girl5.jpg" alt="About Our Store">
+                
             </div>
-            <div class="about-content">
-                <h2>About Our Store</h2>
+            <div class="about-content w-1/2 flex flex-col">
+                <h2 class="font-bold text-5xl text-pink-500">About Our Store</h2>
                 <p class="subtitle">Providing Quality Products Since 2014</p>
                 
                 <div class="about-text">
-                    <p>Welcome to ShopNow, where quality meets convenience. We've been serving our customers with the finest selection of products and exceptional service for over a decade.</p>
+                    <p>Welcome to EliteMart, where quality meets convenience. We've been serving our customers with the finest selection of products and exceptional service for over a decade.</p>
                     <p>Our mission is to provide an seamless shopping experience with carefully curated products that enhance your lifestyle.</p>
                 </div>
     
@@ -275,11 +282,7 @@
                         <p>Competitive prices and regular special offers</p>
                     </div>
                     
-                    <div class="feature">
-                        <div class="feature-icon">🤝</div>
-                        <h3>24/7 Support</h3>
-                        <p>Always here to help with your questions</p>
-                    </div>
+                    
                 </div>
     
                 <div class="stats-container">
@@ -296,7 +299,6 @@
                         <span class="stat-label">Satisfaction Rate</span>
                     </div>
                 </div>
-    
                 <a href="#" class="learn-more">Learn More About Us</a>
             </div>
         </div>
@@ -305,7 +307,64 @@
      </Main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="footer bg-neutral text-neutral-content p-10">
+        <aside>
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            class="fill-current">
+            <path
+              d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+          </svg>
+          <p>
+            EliteMart
+            <br />
+            Providing reliable products since 2022
+          </p>
+        </aside>
+        <nav>
+          <h6 class="footer-title">Social</h6>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </footer>
 
     <!-- JavaScript Link -->
     <script src="JS/script.js"></script>
